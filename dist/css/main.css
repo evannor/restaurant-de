@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #eeede2;
   color: #6c4800;
@@ -9,6 +15,38 @@ h1 {
 
 p {
   font-family: "Playfair Display", serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 56px auto 32px;
+}
+nav .logo-name {
+  display: flex;
+}
+nav .logo-name h1 {
+  font-weight: bold;
+  font-size: 64px;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  font-weight: 700;
+  font-size: 24px;
+  padding-left: 48px;
+}
+
+.container {
+  margin: auto;
+  max-width: 80%;
 }
 
 /*# sourceMappingURL=main.css.map */

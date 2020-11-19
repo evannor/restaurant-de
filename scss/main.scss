@@ -1,10 +1,62 @@
+$page-color: #eeede2;
+$txt-color: #6c4800;
+$header-font: "Domine", serif;
+$par-font: "Playfair Display", serif;
+$base-size: 16px;
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Universal Styles
 body {
-  background-color: #eeede2;
-  color: #6c4800;
+  background-color: $page-color;
+  color: $txt-color;
 }
 h1 {
-  font-family: "Domine", serif;
+  font-family: $header-font;
 }
 p {
-  font-family: "Playfair Display", serif;
+  font-family: $par-font;
+}
+
+// navbar
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: ($base-size * 3.5) auto ($base-size * 2);
+
+  .logo-name {
+    display: flex;
+
+    h1 {
+      font-weight: bold;
+      font-size: ($base-size * 4);
+      padding-left: $base-size;
+      padding-top: $base-size;
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      font-weight: 700;
+      font-size: ($base-size * 1.5);
+      padding-left: ($base-size * 3);
+    }
+  }
+}
+
+// Section Styles
+.container {
+  margin: auto;
+  max-width: 80%;
 }
