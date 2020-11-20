@@ -1,5 +1,6 @@
 $page-color: #eeede2;
 $txt-color: #6c4800;
+$block: #f6a810;
 $header-font: "Domine", serif;
 $par-font: "Playfair Display", serif;
 $base-size: 16px;
@@ -23,6 +24,17 @@ p {
   font-family: $par-font;
 }
 
+// Utility
+.color-block {
+  position: absolute;
+  width: 983px;
+  height: 578px;
+  background-color: $block;
+  opacity: 13%;
+  margin-left: ($base-size * 6);
+  z-index: -1;
+}
+
 // navbar
 nav {
   background-color: $page-color;
@@ -36,6 +48,7 @@ nav {
   width: 80%;
   padding-top: $base-size;
   margin: 0 auto ($base-size * 2);
+  z-index: 2;
 
   .logo-name {
     display: flex;
@@ -60,50 +73,99 @@ nav {
   }
 }
 
-// Section Styles
+// Page Container
 .container {
   margin: ($base-size * 7) auto 0;
   max-width: 80%;
+}
 
-  .home {
-    margin-top: ($base-size * 17);
-    div {
-      max-width: 65%;
-      float: left;
-      height: 75vh;
-      h1 {
-        text-align: left;
-        font-weight: bold;
-        font-size: 64px;
-        margin-bottom: ($base-size * 7);
+// Section styling
+.home {
+  margin-top: ($base-size * 17);
+  div {
+    max-width: 65%;
+    float: left;
+    height: 75vh;
+    h1 {
+      text-align: left;
+      font-weight: bold;
+      font-size: ($base-size * 4);
+      margin-bottom: ($base-size * 7);
 
-        span {
-          font-size: 150%;
-          padding-left: ($base-size * 2);
-        }
-      }
-      .home-info {
-        max-width: 100%;
-        font-size: 36px;
-        line-height: 48px;
-        margin-left: ($base-size * 9);
-
-        p {
-          padding-bottom: ($base-size * 3);
-        }
+      span {
+        font-size: 150%;
+        padding-left: ($base-size * 2);
       }
     }
-    img {
-      float: right;
-      max-width: 327px;
-      max-height: 462px;
-      border: 22px $txt-color solid;
-      border-radius: 38px;
+    .home-info {
+      max-width: 100%;
+      font-size: ($base-size * 2.25);
+      line-height: ($base-size * 0.75);
+      margin-left: ($base-size * 9);
+
+      p {
+        padding-bottom: ($base-size * 3);
+        line-height: 1.5;
+      }
     }
   }
+  img {
+    float: right;
+    max-width: 327px;
+    max-height: 462px;
+    border: 22px $txt-color solid;
+    border-radius: 38px;
+  }
+}
 
-  .menu {
-    clear: both;
-    margin-top: ($base-size * 7);
+.menu {
+  clear: both;
+  margin-top: ($base-size * 7);
+  position: relative;
+  padding-top: ($base-size * 13);
+
+  img {
+    width: 288px;
+    border: solid 10px $block;
+    border-radius: 38px;
+  }
+
+  .menu-info {
+    display: grid;
+    width: 95%;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 30% 70%;
+
+    .gin {
+      justify-self: start;
+      margin-top: -($base-size * 9);
+      margin-left: ($base-size * 2);
+    }
+
+    .cocktails {
+      justify-self: start;
+      align-self: center;
+      font-size: 125%;
+      margin-left: -($base-size * 13);
+      padding-right: ($base-size * 5);
+    }
+
+    .goodies {
+      justify-self: start;
+      align-self: center;
+      line-height: 1.2;
+      margin-left: ($base-size * 7);
+      padding-right: -($base-size * 2);
+      padding-bottom: ($base-size * 4);
+
+      p {
+        margin-left: ($base-size * 2);
+      }
+    }
+
+    .pie {
+      justify-self: end;
+      margin-right: -($base-size * 3);
+    }
   }
 }

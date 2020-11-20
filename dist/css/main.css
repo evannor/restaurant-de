@@ -17,6 +17,16 @@ p {
   font-family: "Playfair Display", serif;
 }
 
+.color-block {
+  position: absolute;
+  width: 983px;
+  height: 578px;
+  background-color: #f6a810;
+  opacity: 13%;
+  margin-left: 96px;
+  z-index: -1;
+}
+
 nav {
   background-color: #eeede2;
   overflow: hidden;
@@ -29,6 +39,7 @@ nav {
   width: 80%;
   padding-top: 16px;
   margin: 0 auto 32px;
+  z-index: 2;
 }
 nav .logo-name {
   display: flex;
@@ -53,43 +64,86 @@ nav ul li {
   margin: 112px auto 0;
   max-width: 80%;
 }
-.container .home {
+
+.home {
   margin-top: 272px;
 }
-.container .home div {
+.home div {
   max-width: 65%;
   float: left;
   height: 75vh;
 }
-.container .home div h1 {
+.home div h1 {
   text-align: left;
   font-weight: bold;
   font-size: 64px;
   margin-bottom: 112px;
 }
-.container .home div h1 span {
+.home div h1 span {
   font-size: 150%;
   padding-left: 32px;
 }
-.container .home div .home-info {
+.home div .home-info {
   max-width: 100%;
   font-size: 36px;
-  line-height: 48px;
+  line-height: 12px;
   margin-left: 144px;
 }
-.container .home div .home-info p {
+.home div .home-info p {
   padding-bottom: 48px;
+  line-height: 1.5;
 }
-.container .home img {
+.home img {
   float: right;
   max-width: 327px;
   max-height: 462px;
   border: 22px #6c4800 solid;
   border-radius: 38px;
 }
-.container .menu {
+
+.menu {
   clear: both;
   margin-top: 112px;
+  position: relative;
+  padding-top: 208px;
+}
+.menu img {
+  width: 288px;
+  border: solid 10px #f6a810;
+  border-radius: 38px;
+}
+.menu .menu-info {
+  display: grid;
+  width: 95%;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 30% 70%;
+}
+.menu .menu-info .gin {
+  justify-self: start;
+  margin-top: -144px;
+  margin-left: 32px;
+}
+.menu .menu-info .cocktails {
+  justify-self: start;
+  align-self: center;
+  font-size: 125%;
+  margin-left: -208px;
+  padding-right: 80px;
+}
+.menu .menu-info .goodies {
+  justify-self: start;
+  align-self: center;
+  line-height: 1.2;
+  margin-left: 112px;
+  padding-right: -32px;
+  padding-bottom: 64px;
+}
+.menu .menu-info .goodies p {
+  margin-left: 32px;
+}
+.menu .menu-info .pie {
+  justify-self: end;
+  margin-right: -48px;
 }
 
 /*# sourceMappingURL=main.css.map */
