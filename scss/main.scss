@@ -16,12 +16,45 @@ $base-size: 16px;
 body {
   background-color: $page-color;
   color: $txt-color;
+  font-size: $base-size;
 }
 h1 {
   font-family: $header-font;
 }
 p {
   font-family: $par-font;
+}
+form {
+  font-family: $header-font;
+  display: flex;
+  flex-direction: column;
+
+  label,
+  input,
+  textarea {
+    margin-bottom: $base-size / 2;
+  }
+}
+button {
+  background-color: $txt-color;
+  color: $page-color;
+  font-family: $header-font;
+  letter-spacing: 2px;
+  padding: $base-size;
+  border: 1px $txt-color;
+  border-radius: 34px;
+
+  &:hover {
+    opacity: 75%;
+  }
+}
+footer {
+  height: $base-size * 5;
+  background-color: $txt-color;
+  color: $page-color;
+  text-align: center;
+  align-items: center;
+  padding: ($base-size * 2.5) 0;
 }
 
 // Utility
@@ -120,7 +153,7 @@ nav {
 
 .menu {
   clear: both;
-  margin-top: ($base-size * 7);
+  margin: ($base-size * 7) 0;
   position: relative;
   padding-top: ($base-size * 13);
 
@@ -139,15 +172,15 @@ nav {
     .gin {
       justify-self: start;
       margin-top: -($base-size * 9);
-      margin-left: ($base-size * 2);
+      margin-left: ($base-size * 3);
     }
 
     .cocktails {
       justify-self: start;
       align-self: center;
-      font-size: 125%;
+      font-size: 150%;
       margin-left: -($base-size * 13);
-      padding-right: ($base-size * 5);
+      padding-right: ($base-size * 3);
     }
 
     .goodies {
@@ -155,11 +188,12 @@ nav {
       align-self: center;
       line-height: 1.2;
       margin-left: ($base-size * 7);
-      padding-right: -($base-size * 2);
       padding-bottom: ($base-size * 4);
 
       p {
+        font-size: 125%;
         margin-left: ($base-size * 2);
+        padding: $base-size;
       }
     }
 
@@ -167,5 +201,34 @@ nav {
       justify-self: end;
       margin-right: -($base-size * 3);
     }
+  }
+}
+
+.contact {
+  display: grid;
+  height: 578px;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  margin-bottom: $base-size * 5;
+
+  .contact-info {
+    justify-self: right;
+
+    h1 {
+      font-size: 275%;
+      margin-bottom: ($base-size * 3);
+    }
+
+    .address {
+      margin-top: ($base-size * 2);
+      font-size: $base-size * 1.25;
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .contact-form {
+    justify-self: center;
   }
 }

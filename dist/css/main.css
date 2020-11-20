@@ -7,6 +7,7 @@
 body {
   background-color: #eeede2;
   color: #6c4800;
+  font-size: 16px;
 }
 
 h1 {
@@ -15,6 +16,39 @@ h1 {
 
 p {
   font-family: "Playfair Display", serif;
+}
+
+form {
+  font-family: "Domine", serif;
+  display: flex;
+  flex-direction: column;
+}
+form label,
+form input,
+form textarea {
+  margin-bottom: 8px;
+}
+
+button {
+  background-color: #6c4800;
+  color: #eeede2;
+  font-family: "Domine", serif;
+  letter-spacing: 2px;
+  padding: 16px;
+  border: 1px #6c4800;
+  border-radius: 34px;
+}
+button:hover {
+  opacity: 75%;
+}
+
+footer {
+  height: 80px;
+  background-color: #6c4800;
+  color: #eeede2;
+  text-align: center;
+  align-items: center;
+  padding: 40px 0;
 }
 
 .color-block {
@@ -103,7 +137,7 @@ nav ul li {
 
 .menu {
   clear: both;
-  margin-top: 112px;
+  margin: 112px 0;
   position: relative;
   padding-top: 208px;
 }
@@ -121,29 +155,55 @@ nav ul li {
 .menu .menu-info .gin {
   justify-self: start;
   margin-top: -144px;
-  margin-left: 32px;
+  margin-left: 48px;
 }
 .menu .menu-info .cocktails {
   justify-self: start;
   align-self: center;
-  font-size: 125%;
+  font-size: 150%;
   margin-left: -208px;
-  padding-right: 80px;
+  padding-right: 48px;
 }
 .menu .menu-info .goodies {
   justify-self: start;
   align-self: center;
   line-height: 1.2;
   margin-left: 112px;
-  padding-right: -32px;
   padding-bottom: 64px;
 }
 .menu .menu-info .goodies p {
+  font-size: 125%;
   margin-left: 32px;
+  padding: 16px;
 }
 .menu .menu-info .pie {
   justify-self: end;
   margin-right: -48px;
+}
+
+.contact {
+  display: grid;
+  height: 578px;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.contact .contact-info {
+  justify-self: right;
+}
+.contact .contact-info h1 {
+  font-size: 275%;
+  margin-bottom: 48px;
+}
+.contact .contact-info .address {
+  margin-top: 32px;
+  font-size: 20px;
+}
+.contact .contact-info .address p {
+  font-weight: bold;
+}
+.contact .contact-form {
+  justify-self: center;
 }
 
 /*# sourceMappingURL=main.css.map */
