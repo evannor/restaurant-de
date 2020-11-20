@@ -57,6 +57,47 @@ nav {
 
 // Section Styles
 .container {
-  margin: auto;
+  margin: ($base-size * 7) auto 0;
   max-width: 80%;
+
+  .home {
+    div {
+      max-width: 65%;
+      float: left;
+      height: 75vh;
+      h1 {
+        text-align: left;
+        font-weight: bold;
+        font-size: 64px;
+        margin-bottom: ($base-size * 7);
+
+        span {
+          font-size: 150%;
+          padding-left: ($base-size * 2);
+        }
+      }
+      .home-info {
+        max-width: 100%;
+        font-size: 36px;
+        line-height: 48px;
+        margin-left: ($base-size * 9);
+
+        p {
+          padding-bottom: ($base-size * 3);
+        }
+      }
+    }
+    img {
+      float: right;
+      max-width: 327px;
+      max-height: 462px;
+      border: 22px $txt-color solid;
+      border-radius: 38px;
+    }
+  }
+
+  .menu {
+    clear: both;
+    margin-top: ($base-size * 7);
+  }
 }

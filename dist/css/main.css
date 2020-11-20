@@ -45,8 +45,43 @@ nav ul li {
 }
 
 .container {
-  margin: auto;
+  margin: 112px auto 0;
   max-width: 80%;
+}
+.container .home div {
+  max-width: 65%;
+  float: left;
+  height: 75vh;
+}
+.container .home div h1 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 64px;
+  margin-bottom: 112px;
+}
+.container .home div h1 span {
+  font-size: 150%;
+  padding-left: 32px;
+}
+.container .home div .home-info {
+  max-width: 100%;
+  font-size: 36px;
+  line-height: 48px;
+  margin-left: 144px;
+}
+.container .home div .home-info p {
+  padding-bottom: 48px;
+}
+.container .home img {
+  float: right;
+  max-width: 327px;
+  max-height: 462px;
+  border: 22px #6c4800 solid;
+  border-radius: 38px;
+}
+.container .menu {
+  clear: both;
+  margin-top: 112px;
 }
 
 /*# sourceMappingURL=main.css.map */
