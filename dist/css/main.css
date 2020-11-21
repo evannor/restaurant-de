@@ -138,7 +138,6 @@ nav ul li {
 .menu {
   clear: both;
   margin: 112px 0;
-  position: relative;
   padding-top: 208px;
 }
 .menu img {
@@ -183,6 +182,7 @@ nav ul li {
 
 .contact {
   display: grid;
+  width: 100%;
   height: 578px;
   grid-template-columns: 40% 60%;
   align-items: center;
@@ -204,6 +204,24 @@ nav ul li {
 }
 .contact .contact-form {
   justify-self: center;
+}
+
+@media (min-width: 1450px) {
+  .color-block {
+    width: 70%;
+  }
+
+  .home div h1 {
+    padding-right: 160px;
+  }
+
+  .menu .menu-info .gin {
+    margin-top: -144px;
+    margin-left: 96px;
+  }
+  .menu .menu-info .pie {
+    margin-right: 16px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
