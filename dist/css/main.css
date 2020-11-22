@@ -97,6 +97,9 @@ nav ul li:hover {
   color: #f6a810;
   cursor: pointer;
 }
+nav img {
+  display: none;
+}
 
 .container {
   margin: 112px auto 0;
@@ -248,6 +251,20 @@ nav ul li:hover {
   }
   .menu .menu-info .pie {
     margin-right: 16px;
+  }
+}
+@media (max-width: 1050px) {
+  nav {
+    width: 75%;
+  }
+  nav .logo-name h1 {
+    margin-left: 160px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav img {
+    display: inline-block;
   }
 }
 

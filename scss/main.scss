@@ -109,6 +109,10 @@ nav {
       }
     }
   }
+
+  img {
+    display: none;
+  }
 }
 
 // Page Container
@@ -288,6 +292,26 @@ nav {
       .pie {
         margin-right: ($base-size);
       }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  nav {
+    width: 75%;
+
+    .logo-name {
+      h1 {
+        margin-left: $base-size * 10;
+      }
+    }
+
+    ul {
+      display: none;
+    }
+
+    img {
+      display: inline-block;
     }
   }
 }
