@@ -297,8 +297,12 @@ nav {
 }
 
 @media (max-width: 1050px) {
+  .container {
+    overflow: hidden;
+    max-width: 90%;
+  }
   nav {
-    width: 75%;
+    max-width: 90%;
 
     .logo-name {
       h1 {
@@ -312,6 +316,30 @@ nav {
 
     img {
       display: inline-block;
+    }
+  }
+
+  .home {
+    margin-top: ($base-size * 10);
+    div {
+      max-width: 60%;
+      height: initial;
+
+      h1 {
+        text-align: center;
+
+        span {
+          padding-left: 0;
+        }
+      }
+
+      .home-info {
+        margin-left: $base-size * 5;
+      }
+    }
+
+    img {
+      margin-top: $base-size * 5;
     }
   }
 }

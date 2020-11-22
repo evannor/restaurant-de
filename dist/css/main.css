@@ -254,8 +254,13 @@ nav img {
   }
 }
 @media (max-width: 1050px) {
+  .container {
+    overflow: hidden;
+    max-width: 90%;
+  }
+
   nav {
-    width: 75%;
+    max-width: 90%;
   }
   nav .logo-name h1 {
     margin-left: 160px;
@@ -265,6 +270,26 @@ nav img {
   }
   nav img {
     display: inline-block;
+  }
+
+  .home {
+    margin-top: 160px;
+  }
+  .home div {
+    max-width: 60%;
+    height: initial;
+  }
+  .home div h1 {
+    text-align: center;
+  }
+  .home div h1 span {
+    padding-left: 0;
+  }
+  .home div .home-info {
+    margin-left: 80px;
+  }
+  .home img {
+    margin-top: 80px;
   }
 }
 
