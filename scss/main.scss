@@ -357,3 +357,58 @@ nav {
     padding-top: $base-size * 10;
   }
 }
+
+@media (max-width: 450px) {
+  nav {
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+
+    div {
+      img {
+        padding-left: $base-size / 2;
+      }
+    }
+
+    h1 {
+      display: none;
+    }
+
+    img {
+      padding-right: $base-size / 2;
+    }
+  }
+
+  .home {
+    margin-top: $base-size * 7;
+    div {
+      float: none;
+      max-width: 100%;
+      width: 100%;
+
+      h1 {
+        margin-bottom: $base-size * 4;
+        font-size: $base-size * 3;
+
+        span {
+          text-decoration: underline;
+        }
+      }
+
+      .home-info {
+        margin-left: 0;
+        font-size: $base-size;
+        line-height: 1;
+
+        p {
+          padding-bottom: 0;
+          text-align: center;
+        }
+      }
+    }
+    img {
+      float: none;
+      margin-left: $base-size * 1.5;
+    }
+  }
+}

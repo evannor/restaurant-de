@@ -308,5 +308,50 @@ nav img {
     padding-top: 160px;
   }
 }
+@media (max-width: 450px) {
+  nav {
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  nav div img {
+    padding-left: 8px;
+  }
+  nav h1 {
+    display: none;
+  }
+  nav img {
+    padding-right: 8px;
+  }
+
+  .home {
+    margin-top: 112px;
+  }
+  .home div {
+    float: none;
+    max-width: 100%;
+    width: 100%;
+  }
+  .home div h1 {
+    margin-bottom: 64px;
+    font-size: 48px;
+  }
+  .home div h1 span {
+    text-decoration: underline;
+  }
+  .home div .home-info {
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .home div .home-info p {
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .home img {
+    float: none;
+    margin-left: 24px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
