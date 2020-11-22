@@ -259,11 +259,22 @@ nav img {
     max-width: 90%;
   }
 
+  .color-block {
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+
   nav {
     max-width: 90%;
+    left: 107px;
+  }
+  nav .logo-name {
+    width: 68%;
+    justify-content: space-between;
   }
   nav .logo-name h1 {
-    margin-left: 160px;
+    padding-left: 0;
   }
   nav ul {
     display: none;
@@ -290,6 +301,11 @@ nav img {
   }
   .home img {
     margin-top: 80px;
+  }
+
+  .menu {
+    margin: 0;
+    padding-top: 160px;
   }
 }
 

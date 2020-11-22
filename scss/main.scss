@@ -301,12 +301,21 @@ nav {
     overflow: hidden;
     max-width: 90%;
   }
+  .color-block {
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+  }
   nav {
     max-width: 90%;
+    left: 107px;
 
     .logo-name {
+      width: 68%;
+      justify-content: space-between;
+
       h1 {
-        margin-left: $base-size * 10;
+        padding-left: 0;
       }
     }
 
@@ -341,5 +350,10 @@ nav {
     img {
       margin-top: $base-size * 5;
     }
+  }
+
+  .menu {
+    margin: 0;
+    padding-top: $base-size * 10;
   }
 }
