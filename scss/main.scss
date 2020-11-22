@@ -102,6 +102,11 @@ nav {
       font-weight: 700;
       font-size: ($base-size * 1.5);
       padding-left: ($base-size * 3);
+
+      &:hover {
+        color: $block;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -230,6 +235,32 @@ nav {
 
   .contact-form {
     justify-self: center;
+
+    input[type="text"],
+    input[type="tel"] {
+      border: none;
+      border-bottom: $txt-color 2px solid;
+      background-color: $block;
+      color: $txt-color;
+      border-radius: 34px;
+      padding: ($base-size / 2);
+
+      &:focus {
+        outline: 2px solid $txt-color;
+      }
+    }
+
+    textarea {
+      border: $txt-color 2px solid;
+      background-color: $block;
+      color: $txt-color;
+      border-radius: 34px;
+      padding: ($base-size / 2);
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 }
 

@@ -93,6 +93,10 @@ nav ul li {
   font-size: 24px;
   padding-left: 48px;
 }
+nav ul li:hover {
+  color: #f6a810;
+  cursor: pointer;
+}
 
 .container {
   margin: 112px auto 0;
@@ -204,6 +208,29 @@ nav ul li {
 }
 .contact .contact-form {
   justify-self: center;
+}
+.contact .contact-form input[type=text],
+.contact .contact-form input[type=tel] {
+  border: none;
+  border-bottom: #6c4800 2px solid;
+  background-color: #f6a810;
+  color: #6c4800;
+  border-radius: 34px;
+  padding: 8px;
+}
+.contact .contact-form input[type=text]:focus,
+.contact .contact-form input[type=tel]:focus {
+  outline: 2px solid #6c4800;
+}
+.contact .contact-form textarea {
+  border: #6c4800 2px solid;
+  background-color: #f6a810;
+  color: #6c4800;
+  border-radius: 34px;
+  padding: 8px;
+}
+.contact .contact-form textarea:focus {
+  outline: none;
 }
 
 @media (min-width: 1450px) {
